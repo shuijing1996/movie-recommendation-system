@@ -10,11 +10,13 @@ repos:
     rev: v4.2.0
     hooks:
       - id: check-added-large-files
+        exclude: 'data/.*'
 
       - id: mixed-line-ending
         alias: check-line-endings
         name: check-line-endings
         args: ['--fix=no']
+        exclude: 'data/.*'
 
       - id: check-yaml
         exclude: 'cfn\.ya?ml$'
