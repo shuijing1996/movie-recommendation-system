@@ -118,9 +118,10 @@ output:
 
 <br>
 
-## Final Conclusion
+## Future Work
 After sanity checking the recommendations for the three examples listed above, it is safe to say the movie recommendation system is valid and helpful. However the current system has a few limitations and can be further improved with more time given. 
 
 1. The current system does not use Release_Date and Original_Language variables to make recommendations. Adding these two variables to the current system might improve the current system.
 2. The recommendation can be made only when the system finds an exact match in the dataset with the provided movie. In the future, it might be helpful to allow fuzzy matches for movie names. For example, if the user provides "black widow" or "BlackWidow", the system should be able to identify that the user means "Black Widow" and provide recommendation based on "Black Widow".
-3. Current system can only provide recommendations based on one target movie. However, in reality users usually have a movie history. It will be helpful to recommend the movie based on the user's historical movie watching records. (related source: https://arxiv.org/abs/1904.06690)
+3. It is possible to create an ensemble movie recommendation system. For example, besides the current system (sentence_embedding + consine_similarity), we can create two more ststmes : sentence_embedding + knn and sentence_embedding + Euclidean_distance. The final recommendations can be picked by majority vote by three systems. 
+4. Current system can only provide recommendations based on one target movie. However, in reality users usually have a movie history. It will be helpful to recommend the movie based on the user's historical movie watching records. (related source: https://arxiv.org/abs/1904.06690)
