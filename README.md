@@ -28,7 +28,7 @@ This script will get the final vector for each movie in the data set and store i
 
 ## Get movie recommendation
 
-This script will provide movie recommendations based on the provided movie. 
+This script will provide movie recommendations based on the provided movie. Since there are movies with the same names, in order to give precise recommendations, Release Date will be provided along with the movie names.
 
 The require input **--target_movie**. The optional input **--recommend_count** (default is 5). 
 
@@ -40,20 +40,19 @@ The require input **--target_movie**. The optional input **--recommend_count** (
 
 output:
 
-*Given provided movie: Puss in Boots: The Last Wish_2022-08-24 (release date: 2022-08-24)*
+*Given provided movie: Puss in Boots: The Last Wish_2022-08-24 (Release Date: 2022-08-24)*
 
 *5 recommended movies are:*
 
-*Puss in Book: Trapped in an Epic Tale*
+*Puss in Book: Trapped in an Epic Tale (Release Date: 2017-06-16)*
 
-*Puss in Boots: The Three Diablos*
+*Puss in Boots: The Three Diablos (Release Date: 2012-02-07)*
 
-*Puss in Boots*
+*Puss in Boots (Release Date: 2011-10-28)*
 
-*Scared Shrekless*
+*Scared Shrekless (Release Date: 2010-10-28)*
 
-*Tad the Lost Explorer and the Mummy's Curse*
-
+*Tad the Lost Explorer and the Mummy's Curse (Release Date: 2022-08-26)*
 <br>
 
 ### Example 2: Get 5 movie recommendations for "Everything Everywhere All at Once"
@@ -62,19 +61,19 @@ output:
 
 output:
 
-*Given provided movie: Everything Everywhere All at Once_2022-03-24 (release date: 2022-03-24)*
+*Given provided movie: Everything Everywhere All at Once_2022-03-24 (Release Date: 2022-03-24)*
 
 *5 recommended movies are:*
 
-*Slate*
+*Slate (Release Date: 2020-10-24)*
 
-*Doctor Strange in the Multiverse of Madness*
+*Doctor Strange in the Multiverse of Madness (Release Date: 2022-05-04)*
 
-*I Love America*
+*I Love America (Release Date: 2022-03-11)*
 
-*Infinite Storm*
+*Infinite Storm (Release Date: 2022-03-25)*
 
-*The Lost City*
+*The Lost City (Release Date: 2022-03-24)*
 
 <br>
 
@@ -86,35 +85,35 @@ Since there are two Black Widow movies (one realease in 2021 and other in 1987) 
 
 output:
 
-*Given provided movie: Black Widow_2021-07-07 (release date: 2021-07-07)*
+*Given provided movie: Black Widow_2021-07-07 (Release Date: 2021-07-07)*
 
 *5 recommended movies are:*
 
-*Captain America: The Winter Soldier*
+*Captain America: The Winter Soldier (Release Date: 2014-03-20)*
 
-*Captain Marvel*
+*Captain Marvel (Release Date: 2019-03-06)*
 
-*Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)*
+*Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (Release Date: 2020-02-05)*
 
-*Iron Man 2*
+*Iron Man 2 (Release Date: 2010-04-28)*
 
-*Zack Snyder's Justice League*
+*Zack Snyder's Justice League (Release Date: 2021-03-18)*
 
 <br>
 
-*Given provided movie: Black Widow_1987-02-06 (release date: 1987-02-06)*
+*Given provided movie: Black Widow_1987-02-06 (Release Date: 1987-02-06)*
 
 *5 recommended movies are:*
 
-*Momentum*
+*Momentum (Release Date: 2015-10-15)*
 
-*A Fall from Grace*
+*A Fall from Grace (Release Date: 2020-01-17)*
 
-*Taking Lives*
+*Taking Lives (Release Date: 2004-03-19)*
 
-*Kiss the Girls*
+*Kiss the Girls (Release Date: 1997-09-29)*
 
-*Copshop*
+*Copshop (Release Date: 2021-09-09)*
 
 <br>
 
