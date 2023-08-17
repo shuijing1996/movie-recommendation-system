@@ -24,8 +24,7 @@ def recommend_movie(data, movie, top_n=5):
                 [target_vector], [movie_vector_ix])[0][0]
 
         data_sort = data.sort_values(by='cos_similarity', ascending=False)
-        recommend_ls = data_sort.Title[1:top_n + 1].tolist()
-
+        recommend_ls = data_sort.titile_w_date[1:top_n + 1].tolist()
         recommend_dict.update({f'{movie}_{target_year}': recommend_ls})
 
     return recommend_dict
@@ -37,6 +36,8 @@ def recommend_movie(data, movie, top_n=5):
 def run(data_path, movie, top_n):
     """Runner function."""
     data = pd.read_csv(data_path, lineterminator='\n')
+    data['titile_w_date'] = data.apply(
+        lambda v: f"{v['Title']} (Release Date: {v['Release_Date']})", axis=1)
 
     if movie in data.Title.tolist():
         recommend_dict = recommend_movie(data, movie, top_n)
@@ -44,7 +45,7 @@ def run(data_path, movie, top_n):
         for k_movie, v_recommend_ls in recommend_dict.items():
             release_date = k_movie.split('_')[1]
             print(
-                f'Given provided movie: {k_movie} (release date: {release_date})'
+                f'Given provided movie: {k_movie} (Release Date: {release_date})'
             )
             print(f'{top_n} recommended movies are:')
             print(*v_recommend_ls, sep='\n')
