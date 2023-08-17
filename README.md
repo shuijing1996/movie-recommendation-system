@@ -4,6 +4,9 @@ This repo aims to recommend new movies based on the provided movie name. The rec
 <br>
 
 ## Start the virtual environment
+
+In order to run this repo, you need to install poetry first. Please follow the instructions in this [link](https://python-poetry.org/docs/) to install poetry first. 
+
 1. To install required all required packages and dependencies
 
 `poetry install`
